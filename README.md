@@ -3,6 +3,8 @@
 This python script was put together quickly for a very specific use-case, and
 that is to toggle which monitor is set to be the "primary" monitor.
 
+![Demo GIF of toggling the primary monitor](demo-toggle-monitor.gif)
+
 ## How it works
 Under the hood, it uses xrandr to get the list of active monitors, and
 if there are two active monitors, it collects the names (IDs?) into a list.
