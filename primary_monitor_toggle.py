@@ -10,12 +10,10 @@ def main():
 
     lines = xrandr.stdout.decode('utf-8').strip().splitlines()
     lines_grepped = []
-    devices = []
     make_primary = ""
 
     for line in lines:
         if re.search(' connected ', line):
-            devices.append(line.strip().split()[0])
             lines_grepped.append(line)
 
     for line in lines_grepped:
