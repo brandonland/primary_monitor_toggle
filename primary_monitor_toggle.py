@@ -6,8 +6,7 @@ import re, subprocess
 
 
 def main():
-    xrandr = subprocess.run(['xrandr'],
-                        capture_output=True)
+    xrandr = subprocess.run(['xrandr'], capture_output=True)
 
     lines = xrandr.stdout.decode('utf-8').strip().splitlines()
     lines_grepped = []
