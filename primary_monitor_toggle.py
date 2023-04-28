@@ -25,10 +25,7 @@ def main():
         if col3 != 'primary':
             make_primary = col1
 
-    print(f"make_primary: {make_primary}")
-
     subprocess.run(['xrandr', '--output', make_primary, '--primary'])
-
 
 if __name__ == "__main__":
     main()
