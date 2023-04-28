@@ -7,7 +7,6 @@ import re, subprocess
 
 def main():
     xrandr = subprocess.run(['xrandr'],
-                        check=True,
                         capture_output=True)
 
     lines = xrandr.stdout.decode('utf-8').strip().splitlines()
